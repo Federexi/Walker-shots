@@ -1,3 +1,12 @@
+body {
+    background-color: #302b2f;
+}
+
 .nav-fondo {
     background-color: #252024;
+}
+
+.carrito {
+    margin-top: 11px;
+    margin-right: 10px;
 }
