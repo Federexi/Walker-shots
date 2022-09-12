@@ -1,5 +1,6 @@
 body {
     background-color: #302b2f;
+    color: #fff;
 }
 
 .nav-fondo {
@@ -9,4 +10,31 @@ body {
 .carrito {
     margin-top: 11px;
     margin-right: 10px;
+}
+
+.resta, .suma {
+    background: none;
+    border: none;
+}
+
+.resta:hover, .suma:hover {
+    background-color: #6b5d68;
+    border-color: #292628;
+}
+
+.resta:focus, .suma:focus, .agregar:focus {
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.agregar {
+    background-color: #4d474b;
+    border-color: #292628;
+}
+
+.agregar:hover {
+    background-color: #72696f;
+    border-color: #292628;
 }
