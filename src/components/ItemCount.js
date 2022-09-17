@@ -4,14 +4,14 @@ function ItemCount({stock, initial, onAdd}) {
     const [number, setNumber] = useState(1);
 
     const handleNumberSum = () => {
-        if(number >= 5){
+        if(number >= stock){
             return
         }
         setNumber(number+1)
     }
 
     const handleNumberMin = () => {
-        if(number <= 1){
+        if(number <= initial){
             return
         }
         setNumber(number-1)

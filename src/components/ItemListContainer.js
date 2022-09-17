@@ -1,12 +1,23 @@
-import ItemCount from './ItemCount';
+import { useEffect, useState } from 'react';
+import getList from '../utils/data';
+import ItemList from './ItemList';
+import Loading from './Loading';
 
-const Blanco = { color: 'white' };
+const ItemListContainer = () => {
+    const [arrayList, SetArrayList] = useState([]);
+    const [loading, SetLoading] = useState(false);
 
-function ItemListContainer(props){
+    useEffect(() => {
+        SetLoading(true);
+        getList()
+        .then((response) => SetArrayList(response))
+        .catch((err) => console.error(err))
+        .finally(() => SetLoading(false))
+    }, [])
+
     return (
         <div>
-        <p style={Blanco} >{props.greeting}</p>
-        <ItemCount/>
+            {loading ? <Loading/> : <ItemList products={arrayList}/>}
         </div>
     );
 }
