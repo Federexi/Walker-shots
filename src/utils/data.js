@@ -1,9 +1,10 @@
-const products = [
+export const products = [
     {
         id: 1,
         image: "https://baltimore.com.ar/img/articulos/4188.png",
         title: "Vino Abras Malbec 750cc",
-        price: 2.500,
+        description: "Malbec de expresión profunda y típica de los vinos de altura. Olfato: frutos negros y rojos maduros, trazos herbales y de pimientos. Boca: es jugoso y vibrante. Paladares firmes y regusto herbal.",
+        price: 2.512,
         stock: 8,
         initial: 1
     },

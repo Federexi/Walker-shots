@@ -1,6 +1,6 @@
 import { useState} from 'react';
 
-function ItemCount({stock, initial, onAdd}) {
+function ItemCount({stock, initial}) {
     const [number, setNumber] = useState(1);
 
     const handleNumberSum = () => {
