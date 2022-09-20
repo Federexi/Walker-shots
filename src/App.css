@@ -83,6 +83,18 @@ body {
     margin-right: 20px;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+footer{
+    background-color: #252024;
+}
+
+.hombre {
+    margin-top: -6px;
+}
+
 @keyframes spinner {
     0% {
       transform: rotate(0deg);
