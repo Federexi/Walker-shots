@@ -1,13 +1,14 @@
 import { useState} from 'react';
 
-function ItemCount({stock, initial}) {
-    const [number, setNumber] = useState(1);
+function ItemCount({stock, initial, onAdd}) {
+    const [number, setNumber] = useState(0);
 
     const handleNumberSum = () => {
         if(number >= stock){
             return
         }
         setNumber(number+1)
+        onAdd(number+1)
     }
 
     const handleNumberMin = () => {
@@ -15,6 +16,7 @@ function ItemCount({stock, initial}) {
             return
         }
         setNumber(number-1)
+        onAdd(number-1)
     }
 
     const addToCart = () => {
