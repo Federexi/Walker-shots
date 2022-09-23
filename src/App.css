@@ -87,6 +87,14 @@ a {
     text-decoration: none !important;
 }
 
+.cart {
+    margin-top: -20px;
+}
+
+.titulo {
+    margin-right: 100px;
+}
+
 footer{
     background-color: #252024;
 }
