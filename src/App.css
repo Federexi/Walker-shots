@@ -91,6 +91,16 @@ a {
     margin-top: -20px;
 }
 
+.total {
+    margin-top: -10px;
+    margin-right: 20px;
+}
+
+.items {
+    color: #fff;
+    margin-left: -6px;
+}
+
 .titulo {
     margin-right: 100px;
 }

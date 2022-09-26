@@ -11,6 +11,7 @@ const CartItem = ({product}) => {
                 <h5 className="card-title">{product.item.title}</h5>
                 <p className="card-text">Cantidad: {product.qty}</p>
                 <p className="card-text">Precio p/u: ${product.item.price}</p>
+                <p>Subtotal: ${product.qty * product.item.price}</p>
                 <button className="btn btn-primary btn-danger" onClick={() => deleteItem(product.item.id)}>Delete</button>            
             </div>
         </div>

@@ -4,7 +4,7 @@ import { CartContext } from "./CartContext";
 import CartItem from "./CartItem";
 
 const Cart = () => {
-    const { cartList, clear } = useContext(CartContext);
+    const { cartList, clear, calcTotal } = useContext(CartContext);
 
     return(
         <>
@@ -18,6 +18,7 @@ const Cart = () => {
             <div>
                 {cartList.map(element => <CartItem key={element.item.id} product={element}/>)}
                 <button className="btn btn-primary agregar float-end cart" onClick={() => clear()}>Clear cart</button>
+                <p className="float-end total">Total: ${calcTotal()}</p>
             </div>
             }
         </>
