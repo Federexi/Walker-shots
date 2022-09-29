@@ -7,6 +7,7 @@ import ItemListContainer from './components/ItemListContainer';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
 import CartContextProvider from './components/CartContext';
+import { products } from './utils/data';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ItemListContainer/>}/>
           <Route path="/category/:id" element={<ItemListContainer/>}/> 
-           <Route path="/item/:id" element={<ItemDetailContainer/>}/> 
+          <Route path="/item/:id" element={<ItemDetailContainer/>}/> 
           <Route path="/cart" element={<Cart/>}/> 
         </Routes>
         <Footer/>

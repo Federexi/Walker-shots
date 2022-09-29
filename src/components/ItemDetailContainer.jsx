@@ -3,6 +3,8 @@ import {useParams} from 'react-router-dom'
 import customFetch from '../utils/customFetch';
 import ItemDetail from './ItemDetail';
 import Loading from './Loading';
+import { doc, getDoc } from "firebase/firestore";
+import { db } from '../utils/firebaseConfig';
 const {products} = require('../utils/data');
 
 const ItemDetailContainer = () => {
@@ -12,18 +14,24 @@ const ItemDetailContainer = () => {
   
     useEffect(() => {
       SetLoading(true);
-      if (id) {
-        customFetch(2000, products.find(item => item.id == id))
-          .then((response) => setArrayList(response))
-          .catch((err) => console.log(err))
-          .finally(() => SetLoading(false));  
+      const firestoreItemFetch = async() => {
+      const docRef = doc(db, "products", id);
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()) {
+        docSnap.data()
       } else {
-        customFetch(2000, products)
-        .then((result) => setArrayList(result))
-        .catch((err) => console.log(err))
-        .finally(() => SetLoading(false));
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
       }
+    }
+    firestoreItemFetch()
+      .then(result => setArrayList(result))
+      .catch((err) => console.error(err))
+      .finally(() => SetLoading(false))
     }, [id]);
+
+
   
     return (
       <div>
