@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
 import {useParams} from 'react-router-dom';
-import ItemList from './ItemList';
-import Loading from './Loading';
-import customFetch from '../utils/customFetch';
+import ItemList from '../components/ItemList';
+import Loading from '../components/Loading';
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from '../utils/firebaseConfig';
-const {products} = require('../utils/data');
 
 const ItemListContainer = () => {
     const [arrayList, SetArrayList] = useState([]);

@@ -1,9 +1,9 @@
 //import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
-import ItemDetailContainer from './components/ItemDetailContainer'; 
+import ItemDetailContainer from './containers/ItemDetailContainer'; 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './containers/ItemListContainer';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
 import CartContextProvider from './components/CartContext';

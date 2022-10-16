@@ -1,6 +1,9 @@
 import man from '../striding-man.jpg';
 import instagram from '../instagram.png';
 import twitter from '../twitter.png';
+import {Link} from 'react-router-dom'
+
+const Blanco = { color: 'white' };
 
 function Footer() {
     return(
@@ -51,16 +54,16 @@ function Footer() {
                 Productos
             </h6>
             <p>
-                <a href="#!" class="text-reset">Vinos</a>
+                <Link to="/category/1"><a class="text-reset">Vinos</a></Link>
             </p>
             <p>
-                <a href="#!" class="text-reset">Espirituosas</a>
+                <Link to="/category/2"><a class="text-reset">Espirituosas</a></Link>
             </p>
             <p>
-                <a href="#!" class="text-reset">Espumantes</a>
+                <Link to="/category/3"><a href="#!" class="text-reset">Espumantes</a></Link>
             </p>
             <p>
-                <a href="#!" class="text-reset">Laravel</a>
+                <a href="#" class="text-reset">Otros</a>
             </p>
             </div>
 
