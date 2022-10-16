@@ -7,7 +7,6 @@ import ItemListContainer from './containers/ItemListContainer';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
 import CartContextProvider from './components/CartContext';
-import { products } from './utils/data';
 
 function App() {
   return (
