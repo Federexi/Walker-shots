@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Walker-shots/static/css/main.d4851386.css",
+    "main.js": "/Walker-shots/static/js/main.32370fef.js",
+    "static/js/787.5add8cc4.chunk.js": "/Walker-shots/static/js/787.5add8cc4.chunk.js",
+    "static/media/striding-man.jpg": "/Walker-shots/static/media/striding-man.85ba1447e3889eb65c4e.jpg",
+    "index.html": "/Walker-shots/index.html",
+    "main.d4851386.css.map": "/Walker-shots/static/css/main.d4851386.css.map",
+    "main.32370fef.js.map": "/Walker-shots/static/js/main.32370fef.js.map",
+    "787.5add8cc4.chunk.js.map": "/Walker-shots/static/js/787.5add8cc4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4851386.css",
+    "static/js/main.32370fef.js"
+  ]
+}
