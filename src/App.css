@@ -296,6 +296,10 @@ footer{
   color: #fff !important;
 }
 
+.href {
+  cursor: pointer;
+}
+
 /*Start cart*/
 
 ol, ul {

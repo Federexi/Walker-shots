@@ -3,8 +3,6 @@ import instagram from '../instagram.png';
 import twitter from '../twitter.png';
 import {Link} from 'react-router-dom'
 
-const Blanco = { color: 'white' };
-
 function Footer() {
     return(
     <div className="d-flex flex-column min-vh-100">
@@ -16,24 +14,24 @@ function Footer() {
         </div>
 
         <div>
-        <a href="" className="me-4 link-secondary">
-            <i className="fab fa-facebook-f"><img src={instagram}></img> </i>
-        </a>
-        <a href="" class="me-4 link-secondary">
-            <i class="fab fa-twitter"><img src={twitter}></img> </i>
-        </a>
-        <a href="" class="me-4 link-secondary">
+        <p className="me-4 link-secondary href">
+            <i className="fab fa-facebook-f"><img src={instagram} alt="instagram"></img> </i>
+        </p>
+        <p class="me-4 link-secondary href">
+            <i class="fab fa-twitter"><img src={twitter} alt="twitter"></img> </i>
+        </p>
+        <p class="me-4 link-secondary href">
             <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 link-secondary">
+        </p>
+        <p class="me-4 link-secondary href">
             <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 link-secondary">
+        </p>
+        <p class="me-4 link-secondary href">
             <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 link-secondary">
+        </p>
+        <p class="me-4 link-secondary href">
             <i class="fab fa-github"></i>
-        </a>
+        </p>
         </div>
     </section>
 
@@ -54,16 +52,16 @@ function Footer() {
                 Productos
             </h6>
             <p>
-                <Link to="/category/1"><a class="text-reset">Vinos</a></Link>
+                <Link to="/category/1"><p className="text-reset href">Vinos</p></Link>
             </p>
             <p>
-                <Link to="/category/2"><a class="text-reset">Espirituosas</a></Link>
+                <Link to="/category/2"><p className="text-reset href">Espirituosas</p></Link>
             </p>
             <p>
-                <Link to="/category/3"><a href="#!" class="text-reset">Espumantes</a></Link>
+                <Link to="/category/3"><p className="text-reset href">Espumantes</p></Link>
             </p>
             <p>
-                <a href="#" class="text-reset">Otros</a>
+                <p className="text-reset href">Otros</p>
             </p>
             </div>
 
@@ -72,16 +70,16 @@ function Footer() {
                 Links
             </h6>
             <p>
-                <a href="#!" class="text-reset">Franquicias</a>
+                <p class="text-reset href">Franquicias</p>
             </p>
             <p>
-                <a href="#!" class="text-reset">Ajustes</a>
+                <p class="text-reset href">Ajustes</p>
             </p>
             <p>
-                <a href="#!" class="text-reset">Ordenes</a>
+                <p class="text-reset href">Ordenes</p>
             </p>
             <p>
-                <a href="#!" class="text-reset">Ayuda</a>
+                <p class="text-reset href">Ayuda</p>
             </p>
             </div>
 
@@ -101,7 +99,7 @@ function Footer() {
 
     <div class="text-center p-4">
         © 2022 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">WalkerShots.com</a>
+        <p class="text-reset fw-bold href">WalkerShots.com</p>
     </div>
   </footer>
 </div>

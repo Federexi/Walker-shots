@@ -1,11 +1,8 @@
-import { increment, serverTimestamp } from "firebase/firestore";
-import { doc, setDoc, collection, updateDoc } from "firebase/firestore";
-import { db } from "../utils/firebaseConfig";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 
 const CartItem = ({product}) => {
-    const {cartList, clear, deleteItem,  calcTotal } = useContext(CartContext)
+    const {deleteItem} = useContext(CartContext)
 
     return(
         <div>
@@ -25,7 +22,7 @@ const CartItem = ({product}) => {
           <p>${product.qty * product.item.price}</p>
         </div>
               <div class="cartSection removeWrap">
-              <a className="remove" onClick={() => deleteItem(product.item.id)}>X</a>
+              <p className="remove href" onClick={() => deleteItem(product.item.id)}>X</p>
         </div>
       </div>
       </li>
