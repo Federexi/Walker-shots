@@ -19,7 +19,7 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav mx-auto ">
               <Link to="/category/1"><a style={Blanco} className="nav-link active" aria-current="page">Vinos</a></Link>
-              <Link to="/category/2"> <a style={Blanco} className="nav-link active">Espirituosas</a> </Link>
+              <Link to="/category/2"> <a style={Blanco} className="nav-link active e">Espirituosas</a> </Link>
               <Link to="/category/3"> <a style={Blanco} className="nav-link active titulo">Espumantes</a> </Link>
             </div>
             <ul className="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
